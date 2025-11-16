@@ -1,17 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './assets/components/Header'
-import Nav from './assets/components/Nav'
+import { useState } from "react";
+import "./App.css";
+import Tarjeta from "./components/Tarjeta";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <Header/>
-     <Nav/>
+      <Tarjeta
+        name="Eidan Jimenez"
+        role="Web Developer"
+        description="I'm a web development junior, i enjoy learning about the develop because i really want to be a web development."
+        skills={["PostgreSQL", "React", "JavaScript"]}
+      />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
